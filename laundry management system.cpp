@@ -1005,7 +1005,7 @@ void login()
 			}
 			else if(ch[i]!=ch1[i])
 			{
-				b==1;
+				b=1;
 			}
 		}
 		if(b==0)
