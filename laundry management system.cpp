@@ -994,7 +994,7 @@ void login()
 	int b=0;
 	int n=strlen(ch);
 	int n1=strlen(ch1);
-	cout<<"n="<<n<<endl<<"n1="<<n1<<endl;
+	//cout<<"n="<<n<<endl<<"n1="<<n1<<endl;
 	if(n1==n)
 	{
 		for(int i=0;i<n;i++)
