@@ -1,4 +1,4 @@
-# Laundry-Managment-System
+# Laundry-Management-System
 the system allwos the student to fill their personal details , see their personal details , and updatte their personal details .
 It also allows the student to give a particular date and time when they want their laubdary to be take and delivered .
 It also allow then allows student to keep a track of their bill .
