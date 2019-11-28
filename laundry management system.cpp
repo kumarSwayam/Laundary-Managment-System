@@ -16,7 +16,7 @@ void get();
 
 class CLOTH
 {
-	public:
+	private:
 		char laundarynumber[20];
 		char numbertshirt[3];
 		char numbershirt[3];
@@ -30,7 +30,7 @@ class CLOTH
 	int createcloth()
 	{
 			cout<<"\n********* ENTER CLOTH NUMBER **************";
-		cout<<"\n\n\t\t Enter Laundry Number :- ";
+		cout<<"\n\n\t\t Enter Laundary Number :- ";
 		cin>>laundarynumber;
 		fflush(stdin);
 		cout<<"\n\n\t\t\tNumber Of Shirts :- ";
@@ -52,7 +52,7 @@ class CLOTH
 	{
 		system("cls");
 		cout<<"********* CLOTH GIVEN **********";
-		cout<<"\n\n\t Laundry Number :- "<<laundarynumber;
+		cout<<"\n\n\t Laundary Number :- "<<laundarynumber;
 		fflush(stdin);
 		cout<<"\n\n\t\t\tNumber Of Shirts :- ";
 		puts(numbershirt);
@@ -72,7 +72,7 @@ class CLOTH
 	int modifycloth()
 	{
 		cout<<"******* ENTER CLOTH DETAIL THAT YOUR GIVING *****************";
-		cout<<"\n\n\t\tEnter Laundry Number :- "<<laundarynumber;
+		cout<<"\n\n\t\tEnter Laundary Number :- "<<laundarynumber;
 		fflush(stdin);
 		cout<<"\n\n\t\t\tNumber Of Shirts :- ";
 		gets(numbershirt);
@@ -101,7 +101,7 @@ class CLOTH
 
 class PICKUP
 {
-	public:
+	private:
 		char laundarynumber[20];
 		char pickupdate[20];
 		char pickuptime[20];
@@ -112,7 +112,7 @@ class PICKUP
 		{
 			system("cls");
 			cout<<"\n********** Enter Pickup And Delivery Date ***********";
-			cout<<"\n\n\t\tEnter Laundry Number :- ";
+			cout<<"\n\n\t\tEnter Laundary Number :- ";
 			cin>>laundarynumber;
 			fflush(stdin);
 			cout<<"\n\n\t\tEnter Pickup Date (date/month/year) :-";
@@ -133,7 +133,7 @@ class PICKUP
 		{
 			system("cls");
 			cout<<"\n********* Pickup And Delivery Date ***********";
-			cout<<"\n\n\t\tLaundry Number :-"<<laundarynumber;
+			cout<<"\n\n\t\tLaundary Number :-"<<laundarynumber;
 			cout<<"\n\n\t\tPick Up Date (date/month/year) :-";
 			puts(pickupdate);
 			cout<<"\n\n\t\tPickUp Time (hour:minute) :-";
@@ -152,7 +152,7 @@ class PICKUP
 		{
 			system("cls");
 			cout<<"\n********** Enter Pickup And Delivery Date ***********";
-			cout<<"\n\n\t\tEnter Laundry Number :- "<<laundarynumber;
+			cout<<"\n\n\t\tEnter Laundary Number :- "<<laundarynumber;
 			fflush(stdin);
 			cout<<"\n\n\t\tEnter Pickup Date (date/month/year) :-";
 			gets(pickupdate);
@@ -181,7 +181,7 @@ class PICKUP
 
 class BILL
 {
-	public:
+	private:
 		char laundarynumber[20]; 
 		char billamount[100];
 	public:
@@ -189,7 +189,7 @@ class BILL
 		{
 			system("cls");
 			cout<<"\n******** Bill **********";
-			cout<<"\n\n\tEnter Laundry Number :-";
+			cout<<"\n\n\tEnter Launary Numberb :-";
 			cin>>laundarynumber;
 			//cout<<"l="<<laundarynumber<<endl;
 			fflush(stdin);
@@ -206,7 +206,7 @@ class BILL
 		{
 			system("cls");
 			cout<<"\n************ Bill **********";
-			cout<<"\n\n\t\tLaundry Number :- ";
+			cout<<"\n\n\t\tLaundary Number :- ";
 			puts(laundarynumber);
 			cout<<"\n\n\t\tBill Amount :- ";
 			puts(billamount);
@@ -220,7 +220,7 @@ class BILL
 		{
 			system("cls");
 			cout<<"************ Bill *****************";
-			cout<<"\n\n\t\tLaundry Number :-"<<laundarynumber;
+			cout<<"\n\n\t\tLaundary Number :-"<<laundarynumber;
 			//billamount=billamount+sum;
 			fflush(stdin);
 			cout<<"\n\n\n\t\tBill Amount :-";
@@ -243,7 +243,7 @@ class BILL
 
 class ADMIN
 {
-	public:
+	private:
 		char laundarynumber[20];
 		char studentname[50];
 		char roomnumber[20];
@@ -253,7 +253,7 @@ class ADMIN
 		{
 			system("cls");
 			cout<<"\n*************** NEW STUDENT REGISTRATION ***************";
-			cout<<"\n\n\tEnter The Student Laundry Number:-";
+			cout<<"\n\n\tEnter The Student Laundary Number:-";
 			cin>>laundarynumber;
 			fflush(stdin);
 			cout<<"\n\n\tEnter The Name Of Student:-";
@@ -272,7 +272,7 @@ class ADMIN
 		{
 			system("cls");
 			cout<<"\n**************** Details Of Student **********************";
-			cout<<"\n\n\tLaundry Number :- "<<laundarynumber;
+			cout<<"\n\n\tLaundary Number :- "<<laundarynumber;
 			fflush(stdin);
 			cout<<"\n\n\tStudent Name :- ";
 			puts(studentname);
@@ -304,7 +304,7 @@ class ADMIN
 		{
 			system("cls");
 			cout<<"******************* Update Student Details ********************";
-			cout<<"\n\n\tLaundry Number :-"<<laundarynumber;
+			cout<<"\n\n\tLaundary Number :-"<<laundarynumber;
 			cout<<"\n\n\tStudent Name :-";
 			gets(studentname);
 			cout<<"\n\n\tRoom Number :-";
@@ -333,7 +333,7 @@ class ADMIN
 
 class STUDENT
 {
-	public:
+	private:
 		char laundarynumber[20];
 		char yourname[50];
 		char yourroomnumber[20];
@@ -343,7 +343,7 @@ class STUDENT
 		{
 			system("cls");
 			cout<<"\n********** Enter Your Details **********";
-			cout<<"\n\n\tEnter The Student Laundry Number:-";
+			cout<<"\n\n\tEnter The Student Laundary Number:-";
 			cin>>laundarynumber;
 			fflush(stdin);
 			cout<<"\n\n\tEnter The Name Of Student:-";
@@ -364,7 +364,7 @@ class STUDENT
 		{
 			system("cls");
 			cout<<"*********** Your Personal Details ***********";
-			cout<<"\n\n\tLaundry Number :- ";
+			cout<<"\n\n\tLaundary Number :- ";
 			puts(laundarynumber);
 			cout<<"\n\n\tStudent Name :- ";
 			puts(yourname);
@@ -384,7 +384,7 @@ class STUDENT
 		{
 			system("cls");
 			cout<<"************** Update Your Details ***********";
-			cout<<"\n\n\tLaundry Number :-"<<laundarynumber;
+			cout<<"\n\n\tLaundary Number :-"<<laundarynumber;
 			fflush(stdin);
 			cout<<"\n\n\tStudent Name :-";
 			gets(yourname);
@@ -627,7 +627,7 @@ int modifystudent()
 	int found=0;
 	int o;
 	system("cls");
-	cout<<"Enter Your Laundry Number :-";
+	cout<<"Enter Your Laundary Number :-";
 	cin>>n;
 	fflush(stdin);
 	fp.open("STUDENT.txt",ios::in|ios::out);
@@ -660,7 +660,7 @@ int modifylaundary()
 	int found=0;
 	int o;
 	system("cls");
-	cout<<"Enter Your Laundry Number :-";
+	cout<<"Enter Your Laundary Number :-";
 	cin>>n;
 	fp.open("ADMIN.txt",ios::in|ios::out);
 	while(fp.read((char*)&a,sizeof(ADMIN))&&found==0)
@@ -692,7 +692,7 @@ int modifyamount()
 	int found=0;
 	int o;
 	system("cls");
-	cout<<"Enter Student Laundry Number :-";
+	cout<<"Enter Student Laundary Number :-";
 	cin>>n;
 	fp.open("BILL.txt",ios::in|ios::out);
 	while(fp.read((char*)&b,sizeof(BILL))&&found==0)
@@ -754,7 +754,7 @@ int modifydate()
 	int found=0;
 	int o;
 	system("cls");
-	cout<<"Enter Your Laundry Number :-";
+	cout<<"Enter Your Laundary Number :-";
 	cin>>n;
 	fp.open("PICKUP.txt",ios::in|ios::out);
 	while(fp.read((char*)&c,sizeof(PICKUP))&&found==0)
@@ -786,7 +786,7 @@ int modifycloth()
 	int found=0;
 	int o;
 	system("cls");
-	cout<<"Enter Your Laundry Number :-";
+	cout<<"Enter Your Laundary Number :-";
 	cin>>n;
 	fflush(stdin);
 	fp.open("CLOTH.txt",ios::in|ios::out);
@@ -823,33 +823,33 @@ void menustudent()
 	int i;
 	int o;
 	cout<<"########### WELCOME STUDENT ####################\n\n";
-	cout<<"\n\n\t\t1.If Login In First Time Enter Your Details\n\n\n\t\t2.See Your Details\n\n\n\t\t3.Update Your Details\n\n\n\t\t4.See Your Bill\n\n\n\t\t5.Enter Cloth Details\n\n\n\t\t6.See Cloth Details\n\n\n\t\t7.Enter PickUp and Delivery Date\n\n\n\t\t8.See PickUp And Delivery Date\n\n\n\t\t9.Exit";
+	cout<<"\n\n\n\t\t1.See Your Details\n\n\n\t\t2.Update Your Details\n\n\n\t\t3.See Your Bill\n\n\n\t\t4.Enter Cloth Details\n\n\n\t\t5.See Cloth Details\n\n\n\t\t6.Enter PickUp and Delivery Date\n\n\n\t\t7.See PickUp And Delivery Date\n\n\n\t\t8.Exit";
 	cout<<"\n\n\t\t Enter Your Choise :-";
 	cin>>i;
-	if(i==1)
+	/*if(i==1)
 	{
 		//system("cls");
 		o=studentwrite();
+		system("cls");
+		menustudent();
+	}*/
+	if(i==1)
+	{
+		//cout<<"under construction";
+		//s.showyour();
+		system("cls");
+		char num[20];
+		cout<<"Please Enter Your Laundary Number :-";
+		cin>>num;
+		fflush(stdin);
+		o=displaylaundary(num);
 		system("cls");
 		menustudent();
 	}
 	else if(i==2)
 	{
 		//cout<<"under construction";
-		//s.showyour();
-		system("cls");
-		char num[20];
-		cout<<"Please Enter Your Laundry Number :-";
-		cin>>num;
-		fflush(stdin);
-		o=displaystudent(num);
-		system("cls");
-		menustudent();
-	}
-	else if(i==3)
-	{
-		//cout<<"under construction";
-		o=modifystudent();
+		o=modifylaundary();
 		system("cls");
 		menustudent();
 	}
@@ -857,53 +857,53 @@ void menustudent()
 	{
 		billwrite();
 	}*/
-	else if(i==4)
+	else if(i==3)
 	{
 		//cout<<"under construction";
 		system("cls");
 		char num[20];
-		cout<<"Please Enter Your Laundry Number :-";
+		cout<<"Please Enter Your Laundary Number :-";
 		cin>>num;
 		fflush(stdin);
 		o=displaybill(num);
 		system("cls");
 		menustudent();
 	}
-	else if(i==5)
+	else if(i==4)
 	{
 		o=modifycloth();
 		system("cls");
 		menustudent();
 	}
-	else if(i==6)
+	else if(i==5)
 	{
 		system("cls");
 		char num[20];
-		cout<<"Please Enter Your Laundry Number :-";
+		cout<<"Please Enter Your Laundary Number :-";
 		cin>>num;
 		fflush(stdin);
 		o=displaycloth(num);
 		system("cls");
 		menustudent();
 	}
-	else if(i==7)
+	else if(i==6)
 	{
 		o=modifydate();
 		system("cls");
 		menustudent();
 	}
-	else if(i==8)
+	else if(i==7)
 	{
 		system("cls");
 		char num[20];
-		cout<<"Please Enter Your Laundry Number :-";
+		cout<<"Please Enter Your Laundary Number :-";
 		cin>>num;
 		fflush(stdin);
 		o=displaydate(num);
 		system("cls");
 		menustudent();
 	}
-	else if(i==9)
+	else if(i==8)
 	{
 		exit(1);
 	}
@@ -937,7 +937,7 @@ void menuadmin()
 			{
 				system("cls");
 				char num[20];
-				cout<<"Please Enter The Laundry Number :-";
+				cout<<"Please Enter Your Laundary Number :-";
 				cin>>num;
 				fflush(stdin);
 				o=displaylaundary(num);
@@ -954,7 +954,7 @@ void menuadmin()
 			{
 				system("cls");
 				char num[20];
-				cout<<"Please Enter The Laundry Number :-";
+				cout<<"Please Enter Your Laundary Number :-";
 				cin>>num;
 				fflush(stdin);
 				o=displaycloth(num);
@@ -965,7 +965,7 @@ void menuadmin()
 			{
 				system("cls");
 				char num[20];
-				cout<<"Please Enter The Laundry Number :-";
+				cout<<"Please Enter Your Laundary Number :-";
 				cin>>num;
 				fflush(stdin);
 				o=displaydate(num);
@@ -1018,6 +1018,7 @@ void login()
 			cout<<"Press any key ...............";
 			getch();
 			system("cls");
+			get();
 		}
 	}
 	else 
@@ -1054,10 +1055,12 @@ void get()
             exit(0);
         else
         {
+        	cout<<"\a\a\a\a\a";
             cout<<"\n\t\tPlease enter correct option :(";
             getch();
+            fflush(stdin);
             system("CLS");
-           get();
+          	get();
         }
 }
 
